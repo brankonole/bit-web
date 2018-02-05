@@ -1,63 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create New Wanted Poster</title>
 </head>
+
 <body>
-    <a href="../index.html">Back To Homepage</a>
-    <br/>
-    <br>
-    <form>
-        <fieldset>
-            <legend>Top Headline</legend>
-            <label>Headline text: <input type="text" name="headlineText"></label>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Images</legend>
-            <label>Image 1 <input type="file"></label> <br/> <br/>
-            <label>Image 2 <input type="file"></label> <br/> <br/>
-            <label>Image 3 <input type="file"></label> <br/> <br/>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Reward</legend>
-            <label>Reward money: <input type="number"></label>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Reward</legend>
-            <label>Aliases: <br>  <input type="text"></label> <br> <br>
-            <label>Birth: <br> <input type="date"></label> <br> <br>
-            <label>Heir: <br> <input type="text"></label> <br> <br>
-            <label>Eyes: <br> <input type="text"></label> <br> <br>
-            <label>Height: <br> <input type="number"></label> <br> <br>
-            <label>Weight: <br> <input type="number"></label> <br> <br>
-            <label>Sex: <br> <input type="text"></label> <br> <br>
-            <label>ID Number: <br> <input type="number"></label> <br> <br>
-            <label>Occupation: <br> <input type="text"></label> <br> <br>
-        </fieldset>
-        <fieldset>
-            <legend>Remarks</legend>
-            <textarea cols="200" rows="10" placeholder="Remarks text"></textarea>
-        </fieldset>
-        <fieldset>
-            <legend>Caution</legend>
-            <textarea cols="200" rows="10" placeholder="Caution text"></textarea>
-        </fieldset>
-        <br><br>
-        <button type="reset">
-            <img src="../images/buttons/reset.png" width="10px">
-            Reset
-        </button>
-        <button type="submit">
-            <img src="../images/buttons/create.png" width="10px">
-            Create Poster
-        </button>
-    </form>
-    <hr>
+    <table width="100%">
+        <tr>
+            <td></td>
+            <td width="700">
+                <a href="../index.html">Back To Homepage</a>
+               <br/>
+                <br>
+                <form action="../posters/bart.html" method="POST">
+                    <fieldset>
+                        <legend>Top Headline</legend>
+                        <label>Headline text:
+                            <input type="text" name="headlineText">
+                        </label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Images</legend>
+                        <label>Image 1
+                            <input type="file">
+                        </label>
+                        <br/>
+                        <br/>
+                        <label>Image 2
+                            <input type="file">
+                        </label>
+                        <br/>
+                        <br/>
+                        <label>Image 3
+                            <input type="file">
+                        </label>
+                        <br/>
+                        <br/>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Reward</legend>
+                        <label>Reward money:
+                            <input type="number">
+                        </label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Reward</legend>
+                        <label>Aliases:
+                            <br>
+                            <input type="text">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Birth:
+                            <br>
+                            <input type="date">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Heir:
+                            <br>
+                            <input type="text">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Eyes:
+                            <br>
+                            <input type="text">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Height:
+                            <br>
+                            <input type="number">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Weight:
+                            <br>
+                            <input type="number">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Sex:
+                            <br>
+                            <input type="text">
+                        </label>
+                        <br>
+                        <br>
+                        <label>ID Number:
+                            <br>
+                            <input type="number">
+                        </label>
+                        <br>
+                        <br>
+                        <label>Occupation:
+                            <br>
+                            <input type="text">
+                        </label>
+                        <br>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Remarks</legend>
+                        <textarea cols="50" rows="10" placeholder="Remarks text"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Caution</legend>
+                        <textarea cols="50" rows="10" placeholder="Caution text"></textarea>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <button type="reset">
+                        <img src="../images/buttons/reset.png" width="10px"> Reset
+                    </button>
+                    <button type="submit">
+                        <img src="../images/buttons/create.png" width="10px"> Create Poster
+                    </button>
+                </form>
+                <hr>           
+            </td>
+            <td></td>
+        </tr>
+    </table>
 </body>
+
 </html>
