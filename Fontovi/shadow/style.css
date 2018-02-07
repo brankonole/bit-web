@@ -1,0 +1,17 @@
+body {
+    background-color: #e1e1e1;
+    font-size: 16px;
+}
+.list-item {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 5px 1px 19px rgba(126, 150, 150, 0.7);
+}
+.link-item {
+    color: peru;
+    text-decoration: none;
+}
+.link-item:link { color: red; }
+.link-item:visited { color: #000; }
+.link-item:hover { color: green; }
+.link-item:active { color: blue; }

@@ -1,0 +1,54 @@
+body {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Lobster', cursive;
+}
+h1 {
+    text-shadow: 5px 1px 3px rgba(108, 150, 150, 0.8);
+    text-align: center;
+}
+.first {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-style: oblique;
+    color: rgba(228, 176, 63, 0.7);
+    text-indent: 2em;
+}
+.second {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 217, 255);
+    opacity: 0.8;
+    font-size: 200%;
+    font-style: italic;
+    color: green;
+}
+.third {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-size: 1.5em;
+    color: gray;
+}
+q {
+    font-family: serif;
+    font-style: italic;
+}
+span {
+    font-weight: 600;
+}
+#second_paragraph {
+    font-family: serif;
+    font-size: 1.3em;
+    font-family: 'Lobster', cursive;
+}
+@font-face {
+    src: url(lobster/Lobster-Regular.ttf);
+}
+
+#a {
+   text-transform: uppercase;
+}
+
+#l {
+    text-transform: capitalize;
+    text-decoration: line-through;
+}
