@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+}
+input {
+    display: block;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 5px;
+    /* background-position:  */
+    padding: 5px 5px 5px 30px;
+    background-position: 5px center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 1px 17px 4px rgba(178,183,189,1);
+-moz-box-shadow: 0px 1px 17px 4px rgba(178,183,189,1);
+box-shadow: 0px 1px 17px 4px rgba(178,183,189,1);
+    
+
+}
+.name {
+    background-image: url("https://cdn3.iconfinder.com/data/icons/black-easy/512/535106-user_512x512.png");
+}
+.email {
+    background-image: url("https://image.flaticon.com/icons/svg/59/59965.svg");
+
+}
+
+.phone {
+    background-image: url("https://cdn2.iconfinder.com/data/icons/picons-essentials/71/mobile-512.png");
+}
+.address {
+    background-image: url("https://image.flaticon.com/icons/svg/25/25694.svg");
+}
+label {
+    display: block;
+    font-size: 18px;
+}
+form  {
+    margin: 200px auto 0; 
+    width: 400px;
+    background-color: #EEEEEE;
+    padding: 40px;
+    border-radius: 15px 0px 15px 0px;
+}
+.form_title {
+    text-align: center;
+    border-bottom: 1px solid #AAAAAA;
+    padding-bottom: 15px;
+}
+span {
+    color: #FBBE01;
+}
+.submit {
+        width: unset;
+        padding: 5px 20px;
+        margin-left: auto;
+        background-color: #C1392B;
+        color: white;
+}
