@@ -1,0 +1,25 @@
+.img-item {
+    width: 200px;
+}
+.wrapper {}
+.div-wrapper .img-item:first-child {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 50px;
+}
+.div-wrapper .img-item:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.div-wrapper .img-item:last-child {
+    position: fixed;
+    bottom: 0;
+}
+.backToTheTop {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 200px;
+}
