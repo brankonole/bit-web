@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+}
+.paragraph {
+    font-size: 18px;
+    line-height: 2;
+    border: 2px solid white;
+    display: inline-block;
+    width: 24%;
+}
+.first-p {
+    @extend .paragraph;
+    border-color: red;
+}
+.second-p {
+    @extend .paragraph;
+    border-color: blue;
+}
+.third-p {
+    @extend .paragraph;
+    border-color: green;
+}
+
+.function-first{
+    width: 300px;
+    box-sizing: content-box;
+    border: 2px solid black;
+    padding: 10px;
+}
+@function c($a, $b, $c) {
+    @return $a + 2*$b + 2*$c;
+}
+.function-second {
+    box-sizing: border-box;
+    border: 2px solid black;
+    padding: 10px;
+    width: c(300px,2px ,10px)
+
+
+}
+
+
+@mixin firstColor($i) {
+    @if $i == 1 {
+        color: blue;
+    }
+    @else if $i == 2 {
+        color: red;
+    }
+    @else if $i == 3 {
+        color:green;
+    }
+    @else if $i == 4 {
+        color: yellow;
+    }
+}
+
+@for $i from 1 through 4 {
+    p:nth-child(#{$i}) {
+        font-size: 14px + ($i*2px);
+        @include firstColor($i);
+    }
+}
+
+@function columnWidth($tableWidth, $numberOfColumns) {
+    @return $tableWidth/$numberOfColumns;
+}
+td {
+    height: 50px;
+    border: 2px solid black;
+    width: columnWidth(100px, 3)
+}
+// table {
+//     width: 100px;
+// }

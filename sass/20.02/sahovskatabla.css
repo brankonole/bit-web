@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+div {
+  width: 960px; }
+  div div {
+    width: 12.2%;
+    float: left;
+    height: 100px;
+        /* @if $class=="eight" {
+            div:nth-child(2n){
+            background-color: black
+            }
+        }
+        @else {
+
+        } */ }
+
+body > div:nth-child(2n) div:nth-child(2n) {
+  background-color: black; }
+body > div:nth-child(2n) div:nth-child(2n+1) {
+  background-color: white; }
+
+body > div:nth-child(2n+1) div:nth-child(2n) {
+  background-color: white; }
+body > div:nth-child(2n+1) div:nth-child(2n+1) {
+  background-color: black; }
+
+/*# sourceMappingURL=sahovskatabla.css.map */
