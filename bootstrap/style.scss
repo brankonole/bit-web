@@ -1,0 +1,28 @@
+// #r1_c1 {
+//     background-color: green;
+// }
+// #r1_c2 {
+//     background-color: blue;
+// }
+// #r2_c1 {
+//     background-color: yellow;
+// }
+// #r2_c2 {
+//     background-color: red;
+// }
+// #r2_c3 {
+//     background-color: purple;
+// }
+body {
+    text-align: center;
+}
+.row {
+    background-color: #e1e1e1;
+    padding: 5px;
+    div {
+        background-color: #f3f3f3;
+    }
+    *[class^="col-"] {
+        border: 1px solid white
+    }
+}
