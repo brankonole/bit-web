@@ -1,0 +1,9 @@
+.portfolio { padding-bottom: 40px; }
+.portfolio-title {
+    margin: 50px 0 20px;
+    &.title-underlined { @include color-me($blueish); }
+}
+.img-wrapper {
+    margin-bottom: 30px;
+    img { width: 100%; }
+}

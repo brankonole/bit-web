@@ -3,16 +3,24 @@
     src: url("../vendor/font-awesome/Lato-Regular.ttf");
 }
 .header {
-    position: relative;
     font-family: 'Lato-Regular';
 }
 .banner-top {
+    margin-top: 56px;
+    padding-bottom: 40px;
     background-color: $green;
-    .banner-top-wrapper {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
+}
+.banner-top-img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 50px 0 20px;
+}
+.banner-top-title { font-size: 30px; }
+.banner-top-desc {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
 }
 .line {
     width: 50px;
@@ -20,4 +28,23 @@
     margin: 10px auto;
     &.line-black { background-color: #000; }
     &.line-white { background-color: #fff; }
+}
+.title-underlined {
+    @include color-me(#fff);
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    &:before, &:after {
+        @include absolute(no 50% 0 no);
+        content: '';
+        transform: translateX(calc(-100% - 0.6em));
+        width: 60px;
+        height: 2px;
+    }
+    &:after { transform: translateX(0.6em); }
+    .star {
+        @include absolute(no 50% 0 no);
+        transform: translate(-50%, calc(0.5 * 1em));
+    }
 }

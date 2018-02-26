@@ -1,0 +1,31 @@
+// Mixins for positioning, if you want to exclude one of "top left bottom right"
+// just enter "no" instead
+@mixin position($position, $args) {
+	position: $position;
+	$offsets: top left bottom right;
+
+	@each $o in $offsets {
+		$value: nth($args, index($offsets, $o));
+
+		@if $value != "no" {
+			#{$o}: $value;
+		}
+	}
+}
+
+@mixin absolute($args) {
+	@include position(absolute, $args);
+}
+
+@mixin fixed($args) {
+	@include position(fixed, $args);
+}
+
+@mixin relative($args) {
+	@include position(relative, $args);
+}
+
+@mixin color-me($color) {
+    color: $color;
+    &:before, &:after { background-color: $color; }
+}

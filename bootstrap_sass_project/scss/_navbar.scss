@@ -1,0 +1,19 @@
+.header {
+    .container-fluid { max-width: 960px; }
+    .navbar {
+        font-weight: bold;
+        color: white;
+        background-color: #2C3E50;
+    }
+    .navbar-dark .navbar-nav .nav-link { color: white; }
+    .navbar-dark .navbar-toggler {
+        border-color: #fff;
+        outline: 0;
+        &[aria-expanded="true"] { background-color: $green; border-color: $green; }
+    }
+    .navbar-dark .navbar-toggler .navbar-toggler-icon { width: 1.2em; height: 1.2em; }
+    .menu { font-size: 16px; }
+    @media (min-width: 768px) {
+        .navbar-items { justify-content: flex-end; }
+    }
+}
