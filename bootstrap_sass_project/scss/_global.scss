@@ -33,6 +33,7 @@
     @include color-me(#fff);
     position: relative;
     padding-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
     &:before, &:after {
@@ -46,5 +47,21 @@
     .star {
         @include absolute(no 50% 0 no);
         transform: translate(-50%, calc(0.5 * 1em));
+    }
+}
+.about {
+    padding-bottom: 50px;
+    background-color: $green;
+    color: #fff;
+}
+.about-title { padding: 50px 0 20px; }
+.about-btn {
+    display: block;
+    margin: 20px auto;
+    &:hover, &:active { color: $green !important; }
+    &:focus {
+        color: #fff;
+        outline: 0;
+        box-shadow: none;
     }
 }

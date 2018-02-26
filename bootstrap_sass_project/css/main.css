@@ -36,6 +36,7 @@
   color: #fff;
   position: relative;
   padding-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: bold; }
   .title-underlined:before, .title-underlined:after {
@@ -55,6 +56,60 @@
     left: 50%;
     bottom: 0;
     transform: translate(-50%, calc(0.5 * 1em)); }
+
+.about {
+  padding-bottom: 50px;
+  background-color: #18bc9c;
+  color: #fff; }
+
+.about-title {
+  padding: 50px 0 20px; }
+
+.about-btn {
+  display: block;
+  margin: 20px auto; }
+  .about-btn:hover, .about-btn:active {
+    color: #18bc9c !important; }
+  .about-btn:focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: none; }
+
+.contact {
+  padding-bottom: 50px; }
+
+.contact-title {
+  padding: 50px 0 20px;
+  margin-bottom: 20px; }
+  .contact-title.title-underlined {
+    color: #2c3e50; }
+    .contact-title.title-underlined:before, .contact-title.title-underlined:after {
+      background-color: #2c3e50; }
+
+.contact-form {
+  margin: 60px auto 0; }
+
+.contact-input {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid #eee; }
+  .contact-input:hover, .contact-input:active, .contact-input:focus {
+    outline: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: none;
+    border-right: none;
+    border-top: none; }
+
+.contact-btn {
+  background-color: #18bc9c;
+  color: #fff; }
+  .contact-btn:hover, .contact-btn:active, .contact-btn:focus {
+    background-color: #fff;
+    color: #18bc9c;
+    border: 1px solid #18bc9c; }
+  .contact-btn:focus {
+    box-shadow: none; }
 
 .header .container-fluid {
   max-width: 960px; }
@@ -83,7 +138,8 @@
   padding-bottom: 40px; }
 
 .portfolio-title {
-  margin: 50px 0 20px; }
+  padding: 50px 0 20px;
+  margin-bottom: 20px; }
   .portfolio-title.title-underlined {
     color: #2c3e50; }
     .portfolio-title.title-underlined:before, .portfolio-title.title-underlined:after {

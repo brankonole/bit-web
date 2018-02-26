@@ -1,0 +1,30 @@
+.contact { padding-bottom: 50px; }
+.contact-title {
+    padding: 50px 0 20px;
+    margin-bottom: 20px;
+    &.title-underlined { @include color-me($blueish); }
+}
+.contact-form { margin: 60px auto 0; }
+.contact-input {
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    &:hover, &:active, &:focus {
+        outline: 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+}
+.contact-btn {
+    background-color: $green;
+    color: #fff;
+    &:hover, &:active, &:focus {
+        background-color: #fff;
+        color: $green;
+        border: 1px solid $green;
+    }
+    &:focus { box-shadow: none; }
+}
