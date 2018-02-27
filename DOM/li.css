@@ -1,0 +1,19 @@
+.first {
+    color: red;
+}
+
+.second {
+    color: blue;
+}
+
+.third {
+    color: yellow;
+}
+
+.fourth {
+    background-color: black;
+    text-transform: uppercase;
+}
+.active {
+    background-color:red;
+}
