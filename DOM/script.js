@@ -29,8 +29,6 @@ var d = function() {
 
 }
 
-
-
 var traverse = function () {
     var activeLi = document.getElementsByClassName("active")[0].parentNode.parentNode.previousElementSibling.getElementsByTagName("ul")[0].getElementsByTagName("li")[0];
     activeLi.className = "active";

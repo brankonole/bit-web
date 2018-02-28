@@ -1,0 +1,6 @@
+img {
+    width: 33%;
+}
+.selected {
+    border: red solid 1px;
+}
