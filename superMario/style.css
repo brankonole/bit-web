@@ -1,0 +1,25 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: url('bg.jpg');
+    background-repeat: repeat-x;
+    background-position-y: bottom;
+    background-color: #0212FE;
+}
+img {
+    display: none;
+    position: absolute;
+    bottom: 87px;
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mario-gif {
+    display: none;
+    height: 100px;
+    width: 82px;
+}
+img.active { display: block; }
