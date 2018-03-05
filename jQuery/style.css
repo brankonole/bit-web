@@ -1,0 +1,6 @@
+.border-bottom {
+    border-bottom: 1px solid #000;
+}
+.to-upper-case {
+    text-transform: uppercase;
+}
