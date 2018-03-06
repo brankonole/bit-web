@@ -18,5 +18,4 @@ $(function () {
             'float': 'left'
         })
     })
-
 });
