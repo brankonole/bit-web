@@ -30,17 +30,17 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
-var start = null;
+// var start = null;
 
-function step(timestamp) {
-    if (!start) start = timestamp;
-    var progress = timestamp - start;
-    console.log(progress);
+// function step(timestamp) {
+//     if (!start) start = timestamp;
+//     var progress = timestamp - start;
+//     console.log(progress);
     
-    container.style.backgroundPositionX = - progress / 2 + 'px';
+//     container.style.backgroundPositionX = - progress / 2 + 'px';
 
-    movingBgd = window.requestAnimationFrame(step);
-  }
+//     movingBgd = window.requestAnimationFrame(step);
+//   }
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode == 39) {
